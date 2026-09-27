@@ -1,3 +1,4 @@
+"use strict"
 // Husk fra dag 1: skriv "use strict" herunder
 
 
@@ -18,4 +19,9 @@ getWordElem.addEventListener("click", function() {
     // Ellers:
     //   - sæt this.innerHTML til "Det ta'r kun 5 minutter"
 
+    if (this.textContent === `Det ta'r kun 5 minutter`) {
+        this.innerHTML = `<strong>og så er du i Netto.</strong>`;
+    } else {
+        this.innerHTML = `Det ta'r kun 5 minutter`; 
+    }
 });
